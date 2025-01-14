@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS todo (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    created_on timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_updated timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    due_date timestamp,
+    description TEXT,
+    done BOOLEAN NOT NULL DEFAULT FALSE,
+    updates VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS updates (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    update_text VARCHAR(512) NOT NULL,
+)
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+
+)
