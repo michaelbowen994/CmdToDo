@@ -8,4 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class TodoController {
 
     private final JdbcTodoRepository repository;
+
+    public TodoController(JdbcTodoRepository repository){
+        this.repository = repository;
+    }
+
+    
 }
