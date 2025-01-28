@@ -1,0 +1,13 @@
+{
+    "users": [
+        {
+        "id": 1,
+        "first_name": "John",
+        "last_name": "Doe", 
+        "email": "randomemail@invisible.world",
+        "password": "password",
+        "todo_ids": "1,2,3"
+        }
+    ]
+
+}
