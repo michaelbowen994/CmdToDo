@@ -34,4 +34,4 @@ build/
 
 ### Data and Others ###
 .env
-
+.json
