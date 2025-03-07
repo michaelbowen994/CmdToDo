@@ -5,12 +5,11 @@ import java.util.List;
 
 public record Todo(int id,
                    String title,
-                   LocalDateTime created,
+                   LocalDateTime createdOn,
                    LocalDateTime lastUpdated,
-                   LocalDateTime due,
+                   LocalDateTime dueDate,
                    boolean completed,
-                   List<String> tags,
                    String description,
-                   List<String> updates){
+                   String updates){
 
 }
